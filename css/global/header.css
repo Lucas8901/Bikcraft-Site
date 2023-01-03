@@ -1,0 +1,43 @@
+.header-bg{
+  background-color: var(--cor-12);
+}
+
+.header{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+.header-menu{
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.header-menu a{
+  padding: 16px 0;
+  position: relative;
+  display: inline-block;
+  color: var(--cor-0);
+}
+
+.header-menu a::after{
+  content: '';
+  position: absolute;
+  display: block;
+  height: 2px;
+  width:0px;
+  background-color:var(--cor-0);
+  margin-top: 4px;
+  transition: 0.3s;
+}
+
+.header-menu a:hover:after,
+.header-menu a.ativo::after{
+  width: 100%;
+}
+
